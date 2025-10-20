@@ -1,0 +1,25 @@
+from rich.console import Console
+
+console = Console()
+
+wyrm_emblem = r"""
+        ,     \    /      ,        
+       / \    )\__/(     / \       
+      /   \  (_\  /_)   /   \      
+ ____/_____\__\@  @/___/_____\____ 
+|             |\../|              |
+|              \VV/               |
+|            WEBWYRM              |
+|_________________________________|
+ |    /\ /      \\       \ /\    | 
+ |  /   V        ))       V   \  | 
+ |/     `       //        '     \| 
+ `              V                 
+"""
+
+def show_banner():
+    console.print(f"[bold green]{wyrm_emblem}[/bold green]")
+    console.print("[yellow]The lurking web crawler...[/yellow]")
+
+if __name__ == "__main__":
+    show_banner()
